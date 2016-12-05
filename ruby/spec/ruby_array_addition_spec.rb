@@ -32,3 +32,15 @@ RSpec.describe Array, 'index_arr_add' do
     end
   end
 end
+
+RSpec.describe Array, 'index_arr_multiple_add' do
+  context 'add any two elements to the arr at the index' do
+    it 'and return `arr`' do
+      arr = ['a','b','c','d','e','f']
+      index = 2
+      elementa = 'elementA'
+      elementb = 'elementB'
+      expect(index_arr_multiple_add(arr, index)).to eq ['a','b','elementA','elementB','c','d','e','f']
+    end
+  end
+end

@@ -21,3 +21,14 @@ RSpec.describe Array, 'begin_arr_add' do
     end
   end
 end
+
+RSpec.describe Array, 'index_arr_add' do
+  context 'Add `element` at position `index` to the Array variable `arr` and return `arr`' do
+    it 'and return `arr`' do
+      arr = ['a','b','c','d','e','f']
+      index = 2
+      element = 'the element'
+      expect(index_arr_add(arr, index, element)).to eq ['a','b','the element','c','d','e','f']
+    end
+  end
+end

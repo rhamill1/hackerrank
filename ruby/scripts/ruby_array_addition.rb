@@ -4,5 +4,9 @@ def end_arr_add(arr, element)
 end
 
 def begin_arr_add(arr, element)
-  arr.insert(0, element)
+  arr.unshift(element)
+end
+
+def index_arr_add(arr, index, element)
+  arr.insert(index, element)
 end

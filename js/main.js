@@ -49,4 +49,11 @@ exports.stringReverse = function(string){
   }
 
   return newString;
-}
+};
+
+
+exports.timeAngle = function(timeArray){
+
+  return 0;
+  // console.log(min);
+};

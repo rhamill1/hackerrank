@@ -49,3 +49,12 @@ describe('thirdLargestNumber([1,2])', function() {
     assert.equal('array too short', main.thirdLargestNumber([1,2]));
   });
 });
+
+
+
+
+describe('timeAngle([12,0])', function() {
+  it('returns 0', function() {
+    assert.equal(0, main.timeAngle([12,0]));
+  });
+});

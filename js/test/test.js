@@ -58,3 +58,9 @@ describe('timeAngle([12,0])', function() {
     assert.equal(0, main.timeAngle([12,0]));
   });
 });
+
+describe('timeAngle([1,30])', function() {
+  it('returns 0', function() {
+    assert.equal(135, main.timeAngle([1,30]));
+  });
+});

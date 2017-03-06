@@ -54,6 +54,25 @@ exports.stringReverse = function(string){
 
 exports.timeAngle = function(timeArray){
 
-  return 0;
-  // console.log(min);
+  var hour;
+    if (timeArray[0] == 12){
+      hour = 0
+    } else if (timeArray[0] < 0 || timeArray[0] > 12) {
+      return 'not a valid hour time';
+    } else {
+      hour = timeArray[0];
+    };
+
+  var minute = timeArray[1];
+
+  var minuteAngle = minute * 6
+  var hourAngle = (hour * 30) + (minute * .5)
+
+
+
+  return Math.abs(minuteAngle - hourAngle);
+
+  console.log(minuteAngle);
+  console.log(hourAngle);
+
 };
